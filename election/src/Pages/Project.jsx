@@ -199,15 +199,6 @@ useEffect(()=>{
     return(
         <Box h='900px' mt={{lg:"150px",md:"100px",sm:"100px",base:"100px"}} >
             
-            <Heading
-
- mb='100px'
-           ml='10px'
-            fontWeight={700}
-            fontSize={{ base: '3xl', sm: '3xl', md: '3xl',lg:"4xl" }}
-            lineHeight={'110%'}>
-            My Projects
-          </Heading>
            
 <Wrap spacing='30px' justify='center'>
 
@@ -373,7 +364,7 @@ width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
     <Center display={'block'}>
 <Image borderRadius={'10px'}     w={{lg:"330px",md:"330px",base:"240px",sm:"330px"}}        fit='cover'        h={{lg:"300px",md:"300px",base:"230px",sm:"300px"}}           mt='10px' ml='10px' src={tra[count3]}/>
    
-   <Text fontSize='28px' fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-25px", sm:"-50px",md:"-50px"}}>MR.TRAVELER</Text>
+   <Text fontSize='28px' fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-25px", sm:"-50px",md:"-50px"}}>डिजीटल जाहिरात</Text>
    
 
     
@@ -385,12 +376,8 @@ width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
 </Center>
 
 
-<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'20px'} width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
-Mr.Traveler is an travel advisory website for hotel
-booking, flight booking and reviews of places, 
- Its a individual project which is completed in five days
-Login,signup,hotel booking,payment options and add to cart
-functionality are developed
+<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'22px'} width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
+आजच्या डिजीटल युगात आपल्या उद्योगधंद्याची माहिती लोकांपर्यंत पोहचवण्यासाठी डिजीटल जाहिरात एक महत्त्वाचे साधन आहे तर मग आपल्या उद्योगधंद्याची जाहिरात करायची असेल किंवा राजकीय, सांस्कृतीक, शैक्षणिक जाहिरात करायची असेल  तर आम्हास नक्कीच कळवा
 
 </Text>
 
@@ -511,7 +498,7 @@ functionality are developed
     <Center display={'block'}>
 <Image borderRadius={'10px'}     w={{lg:"330px",md:"330px",base:"240px",sm:"330px"}}        fit='cover'        h={{lg:"300px",md:"300px",base:"230px",sm:"300px"}}           mt='10px' ml='10px' src={ser[count5]}/>
    
-   <Text fontSize='28px' fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-25px", sm:"-50px",md:"-50px"}}>Scheduler</Text>
+   <Text fontSize='28px' fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-25px", sm:"-50px",md:"-50px"}}>विविध सर्व्हे</Text>
    
 
     
@@ -522,16 +509,12 @@ functionality are developed
 </Center>
 
 
-<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'20px'} width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
-Schdeular is a powerful project management system which  help
-  to complete projects efficientl.
-
-Price,Login,Admin, Calender system are  developed
- its collaborative project,
-completed in five days, 
-
- area of responsibility is to Develope Contact section 
-
+<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'22px'} width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
+मतदारसंघातील वेगवेगळ्या प्रकारेचे सर्व्ह करून त्याची माहिती गोळा करणे व ती माहिती आपल्या प्रचारासाठी वापरात आणणे
+मतदारसंघातील वेगवेगळ्या प्रश्नाबाबत लोकांचे मत जानून घेणे तसेच वेगवेगळ्या
+समूहातील लोकसंख्या व त्यांचे विचार व भावना
+जाणून
+घेणे.
 
 </Text>
 
@@ -592,7 +575,7 @@ completed in five days,
     <Center display={'block'}>
 <Image borderRadius={'10px'}     w={{lg:"330px",md:"330px",base:"240px",sm:"330px"}}        fit='cover'        h={{lg:"300px",md:"300px",base:"230px",sm:"300px"}}           mt='10px' ml='10px' src={soft[count6]}/>
    
-   <Text fontSize='28px' fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-25px", sm:"-50px",md:"-50px"}}>Scheduler</Text>
+   <Text fontSize='28px' fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-25px", sm:"-50px",md:"-50px"}}>सॉफ्टवेअर्स</Text>
    
 
     
@@ -603,15 +586,13 @@ completed in five days,
 </Center>
 
 
-<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'20px'} width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
-Schdeular is a powerful project management system which  help
-  to complete projects efficientl.
+<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'22px'} width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
 
-Price,Login,Admin, Calender system are  developed
- its collaborative project,
-completed in five days, 
 
- area of responsibility is to Develope Contact section 
+आजच्या इंटरनेट च्या युगात एका क्लिकवर सर्व माहिती उपलब्ध
+होते. याचा वापर आपण प्रचारासाठी करू शकतो म्हणजेच मतदारसंघासाठीचे विविध सॉफ्टवेअर्स, मतदारसंघातील विभागानुसार याद्या काढणे ऑनलाईन उमेदवारीचा अर्ज भरणे,वेगवेगळे परवानगी
+काढणे,निवडणूक खर्च
+भरणे इत्यादी.
 
 
 </Text>

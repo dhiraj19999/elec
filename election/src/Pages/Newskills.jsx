@@ -6,13 +6,17 @@
   import { Heading } from "@chakra-ui/react"
   import styles from '../Componentst/MainPa.module.css'
   import { SimpleGrid } from "@chakra-ui/react"
+  import cont from "../Images/content.png"
+  import sur from "../Images/online-survey.png"
+  import docu from "../Images/filmmaker.png"
+  import social from "../Images/social-media.png"
 function NewSkills(){
    
    
-    let html="https://bzhaoportfolio.netlify.app/static/media/html.2ba4fabc69a89a8f71e6.png"
-    let css="https://bzhaoportfolio.netlify.app/static/media/css.69a82c2d9e45c933a9cb.png"
-    let js="https://bzhaoportfolio.netlify.app/static/media/javascript.1ccd6ef9bb1f9c84ef00.png"
-    let react="https://bzhaoportfolio.netlify.app/static/media/react.0cf951a69d8e58f83f9d.png"
+    let html=cont;
+    let css=sur
+    let js=docu
+    let react=social
     
     //
     
@@ -56,14 +60,7 @@ function NewSkills(){
     return(
 
         <Box h='900px' mt={{lg:"1050px",md:"1920px",sm:"1900px",base:"1800px"}}>
- <Heading
- mb='100px'
-           ml='10px'
-            fontWeight={700}
-            fontSize={{ base: '3xl', sm: '3xl', md: '3xl',lg:"4xl" }}
-            lineHeight={'110%'}>
-            My Skills
-          </Heading>
+
 
 <Wrap  spacing='60px' justify='center' >
 
@@ -74,7 +71,7 @@ function NewSkills(){
 <Center display={'block'} >
 
 <Image src={html}  w='90px' mt='20px'ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>HTML</Text>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>सॉफ्टवेअर्स</Text>
 </Center>
 
 
@@ -93,7 +90,7 @@ function NewSkills(){
 <Center display={'block'} >
 
 <Image src={css}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>CSS</Text>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>विविध सर्व्हे</Text>
 </Center>
 
 
@@ -111,7 +108,7 @@ function NewSkills(){
 <Center display={'block'} >
 
 <Image src={js}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>JavaScript</Text>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>डॉक्युमेंटरी</Text>
 </Center>
 
 
@@ -129,7 +126,7 @@ function NewSkills(){
 <Center display={'block'} >
 
 <Image src={react}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>React</Text>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>सोशल मिडीया</Text>
 </Center>
 
 
