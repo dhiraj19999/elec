@@ -10,6 +10,7 @@
   import sur from "../Images/online-survey.png"
   import docu from "../Images/filmmaker.png"
   import social from "../Images/social-media.png"
+  import bulk from "../Images/communication.png"
 function NewSkills(){
    
    
@@ -21,7 +22,7 @@ function NewSkills(){
     //
     
     
-    let tailwin="https://cdn.iconscout.com/icon/free/png-128/tailwind-css-5285308-4406745.png"
+    let tailwin=bulk
     let github="https://cdn.iconscout.com/icon/free/png-128/github-1521500-1288242.png"
     let chakra="https://img.icons8.com/fluency-systems-filled/154/chakra-ui.png"
     let git="https://img.icons8.com/fluency-systems-filled/2x/code-fork.png"
@@ -155,7 +156,7 @@ function NewSkills(){
 <Center display={'block'} >
 
 <Image src={tailwin}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='2px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>TawilWind</Text>
+<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='2px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>बल्क मेसेज</Text>
 </Center>
 
 
