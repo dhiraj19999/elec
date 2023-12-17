@@ -16,7 +16,7 @@ function Services(){
 
 
 
-<Text  color={'pink.400'} fontSize='6xl' pt={'60px'}  >My Services</Text>
+<Text  color={'pink.400'} fontSize='6xl' pt={'60px'}  >आमच्या सेवा</Text>
 
 
 <Flex mt={'100px'} gap='30px'>

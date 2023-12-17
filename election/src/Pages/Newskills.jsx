@@ -55,7 +55,7 @@ function NewSkills(){
    
     return(
 
-        <Box h='900px' mt={{lg:"120px",md:"160px",sm:"160px",base:"100px"}}>
+        <Box h='900px' mt={{lg:"1050px",md:"1920px",sm:"1900px",base:"1800px"}}>
  <Heading
  mb='100px'
            ml='10px'
@@ -330,18 +330,6 @@ function NewSkills(){
 
 
 
-<WrapItem   className={styles.react} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
-
-<Center display={'block'} >
-
-<Image src={type}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='6px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>TypeScript</Text>
-</Center>
-
-
-
-
-</WrapItem>
 
 
 
@@ -349,54 +337,11 @@ function NewSkills(){
 
 
 
-<WrapItem   className={styles.react} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
-
-<Center display={'block'} >
-
-<Image src={next}  w='90px' mt='45px'  ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='14px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>Next JS</Text>
-</Center>
-
-
-
-
-</WrapItem>
 
 
 
 
 
-
-<WrapItem   className={styles.react} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
-
-<Center display={'block'} >
-
-<Image src={redux}  w='90px' mt='20px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>Redux</Text>
-</Center>
-
-
-
-
-</WrapItem>
-
-
-
-
-
-
-<WrapItem   className={styles.react} width={{lg:"240px",md:"240px",xl:"240px",sm:"220px",base:"260px"}}  style={{height:"160px",borderRadius:"6px"}}>
-
-<Center display={'block'} >
-
-<Image src={boot}  w='90px' mt='35px' ml={{xl:"80px",lg:"80px",md:"80px",sm:"65px",base:"85px"}}/>
-<Text color={'black'} fontWeight='bold' fontSize={'18px'} mt='7px' ml={{base:"88px",xl:"85px",lg:"85px",md:"85px",sm:"74px"}}>BootStrap</Text>
-</Center>
-
-
-
-
-</WrapItem>
 
 
 

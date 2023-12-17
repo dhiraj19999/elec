@@ -143,7 +143,7 @@ import NewContact from '../Pages/NewContact';
              
 <div>
  
-<Button
+{/*<Button
      onClick={()=>{
       window.location.href="https://drive.google.com/u/0/uc?id=1FAQZD0ZtN8JYVDEbV8smXClFaDYp2Muy&export=download"
      
@@ -168,7 +168,7 @@ import NewContact from '../Pages/NewContact';
              
               <DownloadIcon />
               Resume
-            </Button>
+  </Button>*/}
 
 
          
@@ -247,8 +247,8 @@ import NewContact from '../Pages/NewContact';
 <Project/>
 
 </section>
-<Stat/>
-<Github/>
+
+
 <section className='skills'>
 <NewSkills/>
 </section>

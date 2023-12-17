@@ -5,29 +5,51 @@
  import { Center } from "@chakra-ui/react"
  import { Image,Text,Box } from "@chakra-ui/react"
  import styles from '../Componentst/MainPa.module.css'
-import men from '../Images/men.png'
+import led1 from '../Images/led1.jpg'
 import { useState,useEffect } from "react"
-import women from '../Images/women.png'
-import login from '../Images/Login.png'
-import address from '../Images/address.png'
-import news1 from '../Images/news1.png'
-import news2 from '../Images/news2.png'
-import news3 from '../Images/news3.png'
-import news4 from '../Images/news4.png'
-import news5 from '../Images/news5.png'
-import news6 from '../Images/news6.png'
-import tra2 from '../Images/tra2.png'
-import tra1 from '../Images/tra1.png'
-import tra3 from '../Images/tra3.png'
-import tra4 from '../Images/tra4.png'
-import tra5 from '../Images/tra5.png'
-import tra6 from '../Images/tra6.png'
-import sce1 from '../Images/sce1.png'
-import sce2 from '../Images/sce2.png'
-import sce3 from '../Images/sce3.png'
-import sce4 from '../Images/sce4.png'
-import sce5 from '../Images/sce5.png'
-import sce6 from '../Images/sce6.png'
+import led2 from '../Images/led2.jpeg'
+import led3 from '../Images/led3.webp'
+import led4 from '../Images/led4.jpg'
+import social1 from '../Images/social1.jpg'
+import social2 from '../Images/social2.webp'
+import social3 from '../Images/social3.jpg'
+import social4 from '../Images/social4.jpg'
+
+import adv1 from '../Images/adv1.webp'
+import adv2 from '../Images/adv2.png'
+import adv3 from '../Images/adv3.webp'
+import adv4 from '../Images/adv4.webp'
+
+import docu from '../Images/docu.jpg'
+import docu1 from '../Images/docu1.jpg'
+import docu4 from '../Images/docu4.jpg'
+import docu3 from '../Images/docu3.jpg'
+
+import serve1 from '../Images/serve1.jpg'
+
+import serve2 from '../Images/serve2.webp'
+
+import serve3 from '../Images/serve3.webp'
+
+import serve4 from '../Images/serve4.jpg'
+
+
+import soft2 from '../Images/soft2.jpg'
+
+import soft3 from '../Images/soft3.webp'
+
+import soft4 from '../Images/soft4.jpg'
+
+import soft5 from '../Images/soft5.jpg'
+
+
+
+
+
+
+
+
+
 import Aos from 'aos'
 import { SimpleGrid } from "@chakra-ui/react"
 function Project(){
@@ -35,24 +57,36 @@ const [count,setCount]=useState(0)
 const [count2,setCount2]=useState(0)
 const [count3,setCount3]=useState(0)
 const [count4,setCount4]=useState(0)
-let sce=[sce1,sce2,sce3,sce4,sce5,sce6,"jj"]
-let arr=[men,women,login,address,'hj']
-let news=[news1,news2,news3,news4,news5,news6,'kkk']
-let tra=[tra1,tra2,tra3,tra4,tra5,tra6,"jjj"]
+const [count5,setCount5]=useState(0)
+const [count6,setCount6]=useState(0)
+let ser=[serve1,serve2,serve3,serve4,"jj"]
+let soft=[soft2,soft3,soft4,soft5]
+let sce=[docu,docu1,docu4,docu3,"jj"]
+let arr=[led1,led2,led3,led4,'hj']
+let news=[social1,social2,social3,social4,"kk"]
+let tra=[adv1,adv2,adv3,adv4,"jjj"]
 if(count==4){
     setCount((prevCount)=>prevCount-4)
    
  }
- if(count2==6){
-    setCount2((prevCount2)=>prevCount2-6)
+ if(count2==4){
+    setCount2((prevCount2)=>prevCount2-4)
  }
 
-if(count3==6){
-    setCount3((prevCount3)=>prevCount3-6)
+if(count3==4){
+    setCount3((prevCount3)=>prevCount3-4)
 }
 
-if(count4==6){
-    setCount4((prevCount4)=>prevCount4-6) 
+if(count4==4){
+    setCount4((prevCount4)=>prevCount4-4) 
+}
+
+if(count5==4){
+    setCount5((prevCount5)=>prevCount5-4) 
+}
+
+if(count6==4){
+    setCount6((prevCount6)=>prevCount6-4) 
 }
 
 
@@ -121,6 +155,40 @@ const id3=setInterval(()=>{
 
 },[])
 
+
+
+
+useEffect(()=>{
+
+    const id5=setInterval(()=>{
+          
+        setCount5((prevCount5)=>prevCount5+1)
+       
+        },2000)
+        
+        return ()=>{clearInterval(id5)}
+    
+    },[])
+
+
+
+    useEffect(()=>{
+
+        const id6=setInterval(()=>{
+              
+            setCount6((prevCount6)=>prevCount6+1)
+           
+            },2000)
+            
+            return ()=>{clearInterval(id6)}
+        
+        },[])
+
+
+
+
+
+
 useEffect(()=>{
     Aos.init({duration: 2000,});
   },[])
@@ -145,7 +213,7 @@ useEffect(()=>{
 
 <SimpleGrid spacing="30px" columns={{xl:2,lg:2,md:1,sm:1,base:1}}>
 
-<WrapItem   className={styles.profirst1}  w={{lg:"450px",md:"450px",base:"310px",sm:"450px"}} style={{borderRadius:"6px"}}  height={{lg:"640px",md:"640px",sm:"640px",base:"600px"}}>
+<WrapItem   className={styles.profirst1}  w={{lg:"450px",md:"450px",base:"310px",sm:"450px"}} style={{borderRadius:"6px"}}  height={{lg:"550px",md:"640px",sm:"640px",base:"600px"}}>
 
 
 
@@ -159,30 +227,27 @@ useEffect(()=>{
     <Center display={'block'}>
 <Image borderRadius={'10px'}     w={{lg:"330px",md:"330px",base:"240px",sm:"330px"}}        fit='cover'        h={{lg:"300px",md:"300px",base:"230px",sm:"300px"}}           mt='10px' ml='10px' src={arr[count]}/>
    
-   <Text fontSize='28px' fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-23px", sm:"-50px",md:"-50px"}}>Bewakoof Clone</Text>
+   <Text fontSize='28px' fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-23px", sm:"-50px",md:"-50px"}}>एल.ई.डी. व्हॅन / प्रचार रथ</Text>
    
 
     
 <Center>
 
-<Image src={html}  w='40px' mt='20px' ml={{lg:"-45px",md:"-45px",sm:"-45px",base:"-22px"}} borderRadius={'10px'}/>
-<Image src={css}  w='40px' mt='20px' ml='50px' borderRadius={'10px'}/>
-<Image src={js}  w='40px' mt='20px' ml='50px' borderRadius={'10px'}/>
+
 </Center>
 
 
-<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'20px'} 
-width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>Bewakoof is an e-commerce website for shopping clothes and various daily uses
-Individual project  which is
-completed in five days
-Login,singup and cart,Men's Product page and Women's product page  functionality are developed
+<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'22px'} 
+width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
+
+आपला निवडणूक प्रचार आणि आपल्या पक्षाची व पक्षाच्या विकासाच्या धोरणाची सर्व माहिती गल्लोगल्ली आणि सर्व लोकांपर्यंत प्रात्यक्षिक 
+रित्या पोहचवण्यासाठी प्रचारक रथ म्हणजेच एल.ई.डी. व्हॅन ची सुविधा उपलब्ध.
 
 </Text>
 
 
 <Center>
-      <a href='https://gleaming-meerkat-64241b.netlify.app/'>  <Button position={''}   _hover={{bg:"black",color:"pink"}}  bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='15px' >Live</Button> </a> 
-      <a href="https://github.com/dhiraj19999/Bewakoof-Website-Clone"> <Button position={''} _hover={{bg:"black",color:"pink"}}  bg='purple.600' w='100px' ml='30px' mt='15px'>Git</Button></a> 
+     
     </Center>
 
 
@@ -225,7 +290,7 @@ Login,singup and cart,Men's Product page and Women's product page  functionality
 
 
 
-<WrapItem   className={styles.profirst1}   w={{lg:"450px",md:"450px",base:"310px",sm:"450px"}} style={{borderRadius:"6px"}} height={{lg:"640px",md:"640px",sm:"640px",base:"600px"}}>
+<WrapItem   className={styles.profirst1}   w={{lg:"450px",md:"450px",base:"310px",sm:"450px"}} style={{borderRadius:"6px"}} height={{lg:"550px",md:"640px",sm:"640px",base:"600px"}}>
 
 <Center display={'block'} >
 
@@ -234,30 +299,25 @@ Login,singup and cart,Men's Product page and Women's product page  functionality
     <Center display={'block'}>
 <Image borderRadius={'10px'}     w={{lg:"330px",md:"330px",base:"240px",sm:"330px"}}        fit='cover'        h={{lg:"300px",md:"300px",base:"230px",sm:"300px"}}           mt='10px' ml='10px' src={news[count2]}/>
    
-   <Text fontSize={'28px'} fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-24px", sm:"-50px",md:"-50px"}}>Deccan Chronicle</Text>
+   <Text fontSize={'28px'} fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-24px", sm:"-50px",md:"-50px"}}>सोशल मीडिया प्रचार-प्रसार</Text>
    
 
     
 <Center>
 
-<Image src={html}  w='40px' mt='20px' ml={{lg:"-45px",md:"-45px",sm:"-45px",base:"-15px"}} borderRadius={'10px'}/>
-<Image src={css}  w='40px' mt='20px' ml={{lg:"50px",md:"50px",sm:"50",base:"40px"}} borderRadius={'10px'}/>
-<Image src={js}  w='40px' mt='20px' ml={{lg:"50px",md:"50px",sm:"50",base:"40px"}} borderRadius={'10px'}/>
-<Image w='40px' mt='20px' ml={{lg:"50px",md:"50px",sm:"50",base:"40px"}} src='https://img.icons8.com/external-others-inmotus-design/2x/external-API-vkontakte-others-inmotus-design-2.png'/>
+
 </Center>
 
 
-<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'20px'} width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>Deccan Chronicle  publishes the largest circulated English newspaper in South India,
-collaborative project of five members which is
-completed in five days, 
-News sections are developed 
-My area of responsibility is to Develope Nation and World section
+<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'22px'} width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
+आजच्‍या सोशल मीडियाच्‍या युगात प्रत्‍येक जन सोशल मीडिया चा वापर करत आहे 
+आणि सोशल मिडीया मुळेच आपण कमी वेळात लोकांपर्यंत पोहोचु शकतो आणि आपला प्रचार व प्रसार सोशल मिडीया च्या 
+माध्यमातून करू शकतो म्हणूनच फेसबुक,इन्स्टाग्राम,ट्विटर या माध्यमातून प्रचार - प्रसार
 </Text>
 
 
 <Center>
-      <a href='https://drive.google.com/file/d/1Xuj9_-D1HV3kJZ75SexkVlkM_JXGJMC2/view'>  <Button  _hover={{bg:"black",color:"pink"}} position={''} bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='17px' >Demo Video</Button> </a> 
-     <a href='https://github.com/Ravi-047/swank-meeting-7218'>  <Button   _hover={{bg:"black",color:"pink"}} position={''} bg='purple.600' w='100px' ml='30px' mt='17px'>Git</Button></a>
+     
     </Center>
 
 
@@ -304,7 +364,7 @@ My area of responsibility is to Develope Nation and World section
 
 
 
-<WrapItem   className={styles.profirst1}  w={{lg:"450px",md:"450px",base:"310px",sm:"450px"}} style={{borderRadius:"6px"}}  height={{lg:"640px",md:"640px",sm:"640px",base:"600px"}}>
+<WrapItem   className={styles.profirst1}  w={{lg:"450px",md:"450px",base:"310px",sm:"450px"}} style={{borderRadius:"6px"}}  height={{lg:"550px",md:"640px",sm:"640px",base:"600px"}}>
 
 <Center display={'block'} >
 
@@ -319,12 +379,7 @@ My area of responsibility is to Develope Nation and World section
     
 <Center>
 
-<Image src={html}  w='40px' mt='20px' ml={{lg:"-45px",md:"-35px",sm:"-45px",base:"-16px"}} />
-<Image src={css}  w='40px' mt='20px' ml={{lg:"30px",md:"30px",sm:"50",base:"10px"}} />
-<Image src={js}  w='40px' mt='20px' ml={{lg:"30px",md:"30px",sm:"50",base:"10px"}} borderRadius={'10px'}/>
-<Image w='40px' mt='20px' ml={{lg:"30px",md:"30px",sm:"30",base:"10px"}} src='https://img.icons8.com/external-others-inmotus-design/2x/external-API-vkontakte-others-inmotus-design-2.png'/>
-<Image  w='40px' mt='20px' ml={{lg:"30px",md:"30px",sm:"30",base:"10px"}} src={react}/>
-<Image  w='40px' mt='20px' ml={{lg:"30px",md:"30px",sm:"30",base:"10px"}} src={chakra}/>
+
 
 
 </Center>
@@ -341,8 +396,7 @@ functionality are developed
 
 
 <Center>
-     <a href='https://mr-traveler.vercel.app/'>  <Button   _hover={{bg:"black",color:"pink"}} position={''} bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='15px' >Live</Button>  </a>
-     <a href='https://github.com/dhiraj19999/meek-calculator-9744'>   <Button  _hover={{bg:"black",color:"pink"}} position={''} bg='purple.600' w='100px' ml='30px' mt='15px'>Git</Button></a>
+   
     </Center>
 
 
@@ -384,7 +438,7 @@ functionality are developed
 
 
 
-<WrapItem   className={styles.profirst1}  w={{lg:"450px",md:"450px",base:"310px",sm:"450px"}} style={{borderRadius:"6px"}}  height={{lg:"640px",md:"640px",sm:"640px",base:"600px"}}>
+<WrapItem   className={styles.profirst1}  w={{lg:"450px",md:"450px",base:"310px",sm:"450px"}} style={{borderRadius:"6px"}}  height={{lg:"550px",md:"640px",sm:"640px",base:"600px"}}>
 
 <Center display={'block'} >
 
@@ -393,18 +447,76 @@ functionality are developed
     <Center display={'block'}>
 <Image borderRadius={'10px'}     w={{lg:"330px",md:"330px",base:"240px",sm:"330px"}}        fit='cover'        h={{lg:"300px",md:"300px",base:"230px",sm:"300px"}}           mt='10px' ml='10px' src={sce[count4]}/>
    
+   <Text fontSize='28px' fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-25px", sm:"-50px",md:"-50px"}}>प्रचारासाठी चित्रफित ( डॉक्युमेंटरी )</Text>
+   
+
+    
+<Center>
+
+
+
+</Center>
+
+
+<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'22px'} width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
+आपल्या विषयी मतदारांना माहिती मिळावी यासाठी आपले वेगवेगळे विकासाचे धोरण,निवडणुकीविषयी असणारे संकल्प किंवा विविध 
+कार्यक्रमाची,सांस्कृतिक कार्यक्रमाची या सगळ्यांचे एकत्रित असे लघु माहिती चित्रफीत तयार करणे.
+
+</Text>
+
+
+<Center>
+ 
+    </Center>
+
+
+
+    
+    </Center>
+</WrapItem>
+
+
+
+
+</Center>
+</WrapItem>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<WrapItem   className={styles.profirst1}  w={{lg:"450px",md:"450px",base:"310px",sm:"450px"}} style={{borderRadius:"6px"}}  height={{lg:"550px",md:"640px",sm:"640px",base:"600px"}}>
+
+<Center display={'block'} >
+
+
+<WrapItem ml={{lg:"50px",md:"50px",sm:"50px",base:"24px"}} mt='30px' className={styles.profirst1} w={{lg:"350px",md:"350px",base:"260px",sm:"350px"}}    h={{lg:"320px",md:"320px",base:"250px",sm:"320px"}}        style={{borderRadius:"6px"}}>
+    <Center display={'block'}>
+<Image borderRadius={'10px'}     w={{lg:"330px",md:"330px",base:"240px",sm:"330px"}}        fit='cover'        h={{lg:"300px",md:"300px",base:"230px",sm:"300px"}}           mt='10px' ml='10px' src={ser[count5]}/>
+   
    <Text fontSize='28px' fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-25px", sm:"-50px",md:"-50px"}}>Scheduler</Text>
    
 
     
 <Center>
 
-<Image src={html}  w='40px' mt='20px' ml={{lg:"-45px",md:"-35px",sm:"-45px",base:"-16px"}} />
-<Image src={css}  w='40px' mt='20px' ml={{lg:"30px",md:"30px",sm:"50",base:"10px"}} />
-<Image src={js}  w='40px' mt='20px' ml={{lg:"30px",md:"30px",sm:"50",base:"10px"}} borderRadius={'10px'}/>
-<Image w='40px' mt='20px' ml={{lg:"30px",md:"30px",sm:"30",base:"10px"}} src='https://img.icons8.com/external-others-inmotus-design/2x/external-API-vkontakte-others-inmotus-design-2.png'/>
-<Image  w='40px' mt='20px' ml={{lg:"30px",md:"30px",sm:"30",base:"10px"}} src={react}/>
-<Image  w='40px' mt='20px' ml={{lg:"30px",md:"30px",sm:"30",base:"10px"}} src={chakra}/>
 
 
 </Center>
@@ -425,8 +537,7 @@ completed in five days,
 
 
 <Center>
-<a href="https://schedulermonday.netlify.app/"> <Button   _hover={{bg:"black",color:"pink"}}  position={''} bg='purple.600' w='100px' ml={{lg:"-50px",md:"-50px",sm:"-50px",base:"-10px"}} mt='15px' >Live</Button>  </a> 
-       <a  href='https://github.com/dhiraj19999/energized-trick-9718'> <Button  _hover={{bg:"black",color:"pink"}}  position={''} bg='purple.600' w='100px' ml='30px' mt='15px'>Git</Button></a> 
+ 
     </Center>
 
 
@@ -448,6 +559,79 @@ completed in five days,
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<WrapItem   className={styles.profirst1}  w={{lg:"450px",md:"450px",base:"310px",sm:"450px"}} style={{borderRadius:"6px"}}  height={{lg:"550px",md:"640px",sm:"640px",base:"600px"}}>
+
+<Center display={'block'} >
+
+
+<WrapItem ml={{lg:"50px",md:"50px",sm:"50px",base:"24px"}} mt='30px' className={styles.profirst1} w={{lg:"350px",md:"350px",base:"260px",sm:"350px"}}    h={{lg:"320px",md:"320px",base:"250px",sm:"320px"}}        style={{borderRadius:"6px"}}>
+    <Center display={'block'}>
+<Image borderRadius={'10px'}     w={{lg:"330px",md:"330px",base:"240px",sm:"330px"}}        fit='cover'        h={{lg:"300px",md:"300px",base:"230px",sm:"300px"}}           mt='10px' ml='10px' src={soft[count6]}/>
+   
+   <Text fontSize='28px' fontWeight='bold' mt='30px' ml={{lg:"-50px",base:"-25px", sm:"-50px",md:"-50px"}}>Scheduler</Text>
+   
+
+    
+<Center>
+
+
+
+</Center>
+
+
+<Text mt='10px' ml={{lg:"-40px",md:"-40px",sm:"-40px",base:"-16px"}} fontWeight={'bold'} fontSize={{lg:"14px",md:"14px",sm:"14px",base:"12px"}} lineHeight={'20px'} width={{lg:"437px",md:"437px",sm:"437px",base:"300px"}}>
+Schdeular is a powerful project management system which  help
+  to complete projects efficientl.
+
+Price,Login,Admin, Calender system are  developed
+ its collaborative project,
+completed in five days, 
+
+ area of responsibility is to Develope Contact section 
+
+
+</Text>
+
+
+<Center>
+ 
+    </Center>
+
+
+
+    
+    </Center>
+</WrapItem>
+
+
+
+
+</Center>
+</WrapItem>
 
 
 
